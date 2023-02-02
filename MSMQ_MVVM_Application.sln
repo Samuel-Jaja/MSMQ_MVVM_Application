@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSMQ_MVVM_Application", "MSMQ_MVVM_Application\MSMQ_MVVM_Application.csproj", "{4493C18F-991D-4CCF-92F6-49F59FD6333E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSMQ_Subsciber_MVVM_Application", "MSMQ_Subsciber_MVVM_Application\MSMQ_Subsciber_MVVM_Application.csproj", "{91E3672A-27AD-40B2-891F-0A9C2B013DED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4493C18F-991D-4CCF-92F6-49F59FD6333E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4493C18F-991D-4CCF-92F6-49F59FD6333E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4493C18F-991D-4CCF-92F6-49F59FD6333E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4493C18F-991D-4CCF-92F6-49F59FD6333E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E3672A-27AD-40B2-891F-0A9C2B013DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E3672A-27AD-40B2-891F-0A9C2B013DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E3672A-27AD-40B2-891F-0A9C2B013DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E3672A-27AD-40B2-891F-0A9C2B013DED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB4402AB-BC0B-444A-BC23-82A7B0966E11}
+	EndGlobalSection
+EndGlobal
