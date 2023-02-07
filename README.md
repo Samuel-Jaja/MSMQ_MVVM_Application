@@ -24,4 +24,6 @@ Prism Core 8.1.97
 ![GitHub top language](https://img.shields.io/github/languages/top/Samuel-Jaja/MSMQ_MVVM_Application?color=yellow)
 ![GitHub forks](https://img.shields.io/github/forks/Samuel-Jaja/MSMQ_MVVM_Application?style=social)
 
+![GitHub forks](https://img.shields.io/twitter/follow/senibo_sj?style=social)
+
 
