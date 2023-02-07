@@ -1,12 +1,9 @@
-# Project Title: 
-# Microsoft Messaging Queue [MSMQ] Application
+# Project Title:Microsoft Messaging Queue [MSMQ] Application
 
 
 # Project Description: 
 Inter App Communication using MSMQ between two Windows Presentation Foundation [WPF] Applications 
 to demostrate messaging with MSMQ using Model View View-Model pattern, such that when Application 1 (process A) publishes data Application 2 (process B) subscribes automatically on the data. 
-
-
 
 
 # How to Run the Project: 
