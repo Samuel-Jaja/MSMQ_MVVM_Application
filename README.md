@@ -7,6 +7,6 @@ Inter App Communication using MSMQ between two Windows Presentation Foundation [
 # How to Run the Project: 
 
 # Badges
-[/twitter/follow/:user?label=Follow ](https://img.shields.io/github/repo-size/Samuel-Jaja/MSMQ_MVVM_Application)
+(https://img.shields.io/github/repo-size/Samuel-Jaja/MSMQ_MVVM_Application)
 
 
