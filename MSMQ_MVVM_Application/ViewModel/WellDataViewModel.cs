@@ -13,7 +13,8 @@ using System.Windows.Media;
 namespace MSMQ_MVVM_Application.ViewModel
 {
     /// <summary>
-    /// WellDataViewModel handles te logic between the model and view. The class uses BindableBase class from Prism and MSMQ Messaging Nuget Package
+    /// WellDataViewModel handles the logic between the model and view to Publish Data.
+    /// The class uses MSMQ Messaging Nuget Package and BindableBase class from Prism Framework.
     /// </summary>
     public class WellDataViewModel:BindableBase
     {
@@ -21,43 +22,46 @@ namespace MSMQ_MVVM_Application.ViewModel
         {
             SendWellDataCommand = new DelegateCommand(SendWellDataCommandAction);
         }
-
         public DelegateCommand SendWellDataCommand { get; set; }
         /// <summary>
-        /// This method sends data( well data) to the queue created  
+        /// This method calls the CreateQueue and SendDataToQueue methods to send well data  
         /// </summary>
         public void SendWellDataCommandAction()
         {
-            EnableQueue();
-            MessageQueue queue = new MessageQueue(@".\private$\MSMQ_MessagingApp");
-            WellDataModel wellData = new WellDataModel
+            CreateQueue();
+            SendDataToQueue();
+        }
+        /// <summary>
+        /// This method specifies queuePath and creates a queue if one does nor exist
+        /// </summary>
+        public static void CreateQueue()
+        {
+            string queuePath = @".\private$\MSMQ_MessagingApp";
+            if (!MessageQueue.Exists(queuePath))
+            {
+              _ = MessageQueue.Create(queuePath);
+            }
+        }
+        /// <summary>
+        /// This method connects to queue and sends data( well data) to the queue created  
+        /// </summary>
+        public void SendDataToQueue()
+        {
+            MessageQueue queue = new(@".\private$\MSMQ_MessagingApp");
+            WellDatamodel wellData = new()
             {
                 WellName = WellName,
                 FieldName = FieldName,
                 DrainagePoint = DrainagePoint
             };
-            Message msg  = new Message(wellData);
+            Message msg = new(wellData);
             queue.Send(msg, "CypherCrescentResource");
             FieldName = string.Empty;
-            WellName= string.Empty;
-            DrainagePoint=string.Empty;
+            WellName = string.Empty;
+            DrainagePoint = string.Empty;
         }
-
         /// <summary>
-        /// This metthod creates and names a queue if one does nor exist
-        /// </summary>
-        public void EnableQueue()
-        {
-            string queueName = @".\private$\MSMQ_MessagingApp";
-            MessageQueue? messageQueue = null;
-            if (!MessageQueue.Exists(queueName))
-            {
-                messageQueue = MessageQueue.Create(queueName);
-            }
-        }
-
-        /// <summary>
-        /// Backing fields and corresponding properties 
+        /// Backing fields and corresponding well data properties 
         /// </summary>
         private string fieldName;
         public string FieldName

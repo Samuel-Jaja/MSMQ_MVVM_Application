@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSMQ_MVVM_Application.Model
 {
-    public class WellDataModel
+    public class WellDatamodel
     {
         public string? FieldName { get; set; }
         public string? WellName { get; set; }

@@ -21,11 +21,11 @@
 
         <TextBlock Grid.Row="0" Grid.Column="1" FontSize="32" Text="SEPAL Well Data" FontWeight="Bold" Padding="20" Margin="-13,0,-13,0" />
         <TextBlock Grid.Row="1" Grid.Column="0" FontSize="18" Text="Field Name" Margin="30,32,30,32" FontWeight="DemiBold"/>
-        <TextBox x:Name="txtfieldName" Text="{Binding FieldName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1" Margin="0,27,0,27"  />
+        <TextBox Text="{Binding FieldName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="1" Margin="0,27"  />
         <TextBlock Grid.Row="2" FontSize="18"  Text="Well Name" Margin="32,38,32,38" FontWeight="DemiBold"/>
-        <TextBox x:Name="txtwellName" Text="{Binding WellName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="1" Margin="0,30"/>
+        <TextBox Text="{Binding WellName, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="1" Margin="0,32"/>
         <TextBlock Grid.Row="3" FontSize="18"  Text="Drainage Point" Margin="15,30" FontWeight="DemiBold"/>
-        <TextBox x:Name="txtdrainagePoint" Text="{Binding DrainagePoint, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="1" Margin="0,25,0,25" />
-        <Button Grid.Row="4" Grid.Column="1" Content="Send" Command="{Binding SendWellDataCommand}" FontSize="20" Background="Green" Foreground="White" FontWeight="DemiBold" Margin="70,0"/>
+        <TextBox Text="{Binding DrainagePoint, UpdateSourceTrigger=PropertyChanged}" Grid.Row="3" Grid.Column="1" Margin="0,24" />
+        <Button Grid.Row="4" Grid.Column="1" Content="Send" Command="{Binding SendWellDataCommand}" FontSize="25" Background="CadetBlue" Height="40" Foreground="Black" FontWeight="Bold" Margin="70,0"/>
     </Grid>
 </Window>

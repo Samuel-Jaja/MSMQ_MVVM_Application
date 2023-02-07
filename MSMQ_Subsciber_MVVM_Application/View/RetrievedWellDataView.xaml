@@ -5,28 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MSMQ_Subsciber_MVVM_Application.View"
         mc:Ignorable="d"
-        Title="RetrievedWellDataView" Height="450" Width="500">
+        Title="RetrievedWellDataView" Height="530" Width="500">
 
-    <Grid>
+    <Grid Background="CadetBlue">
         <Grid.RowDefinitions>
-            <RowDefinition Height="131*"/>
+            <RowDefinition Height="81"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="141*"/>
-           
+            <RowDefinition Height="101"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" FontSize="30" Text="CypherCrescent Resource" FontWeight="Bold" HorizontalAlignment="Center"/>
-        <ListView Grid.Row="1" FontSize="15" Height="200" FontWeight="DemiBold" ItemsSource="{Binding RetrievedWellDataModels}">
-            <ListView.View>
+        <TextBlock Grid.Row="0" FontSize="30" Text="CypherCrescent Resource"  FontWeight="Bold" HorizontalAlignment="Center"/>
+        <ListView Grid.Row="1" FontSize="16" Height="350" FontWeight="DemiBold" ItemsSource="{Binding RetrievedWellDataModels}">
+            <ListView.View >
                 <GridView x:Name="grdNames" >
-                    <GridViewColumn Width="160" Header="FieldName"  DisplayMemberBinding="{Binding FieldName}"/>
-                    <GridViewColumn Width="172" Header="WellName"  DisplayMemberBinding="{Binding WellName}"/>
-                    <GridViewColumn Width="160" Header="DrainagePoint"  DisplayMemberBinding="{Binding DrainagePoint}"/>
+                    <GridViewColumn  Width="160" Header="Field Name" DisplayMemberBinding="{Binding FieldName }"  />
+                    <GridViewColumn Width="170" Header="Well Name" DisplayMemberBinding="{Binding WellName}"/>
+                    <GridViewColumn Width="160" Header="Drainage Point" DisplayMemberBinding="{Binding DrainagePoint}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Command="{Binding RetrieveWellCommand}" Grid.Row="4" Content="Load WellData" Width="142" Height="40" FontSize="20" Background="Green" Foreground="White" FontWeight="DemiBold"></Button>
+        <TextBlock Grid.Row="4" FontSize="12" Text="CypherCrescent Limited ©2023" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
-
 </Window>
