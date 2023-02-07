@@ -1,8 +1,8 @@
-### Project Title:
+## Project Title:
 # Microsoft Messaging Queue [MSMQ] Application
 
 
-### Project Description: 
+## Project Description: 
 Inter App Communication using MSMQ between two Windows Presentation Foundation [WPF] Applications 
 to demostrate messaging with MSMQ using Model View View-Model pattern, such that when Application 1 (process A) publishes data Application 2 (process B) subscribes automatically on the data. 
 
@@ -14,7 +14,8 @@ to demostrate messaging with MSMQ using Model View View-Model pattern, such that
 
 
 ## Badges
+![GitHub language count](https://img.shields.io/github/languages/count/Samuel-Jaja/MSMQ_MVVM_Application)
 ![GitHub file size](https://img.shields.io/github/repo-size/Samuel-Jaja/MSMQ_MVVM_Application)
-![GitHub top language](https://img.shields.io/github/languages/top/{Samuel-Jaja}/{MSMQ_MVVM_Application}?color=yellow)
+![GitHub top language](https://img.shields.io/github/languages/top/Samuel-Jaja/MSMQ_MVVM_Application?color=yellow)
 
 
