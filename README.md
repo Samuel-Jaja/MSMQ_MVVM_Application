@@ -1,3 +1,5 @@
+![GitHub forks](https://img.shields.io/twitter/follow/senibo_sj?style=social)
+
 # Project Title:
 # Microsoft Messaging Queue [MSMQ] Application
 
@@ -6,16 +8,16 @@ Inter App Communication using MSMQ between two Windows Presentation Foundation [
 to demostrate messaging with MSMQ using Model View View-Model pattern, such that when Application 1 (process A) publishes data Application 2 (process B) subscribes automatically on the data. 
 
 # Dependencies 
-.NET 7
+**.NET 7**
 
-**Packages**
-MSMQ Messaging 1.0.4
+**Packages: **
+MSMQ Messaging 1.0.4, 
 Prism Core 8.1.97
 
 # How to Run the Project: 
 * Clone Project 
-* Enable MSMQ from Compouter Management from turn off and on features on Windows PC.
-* Set Visual Studio to Start Up Multiple Projects. 
+* Enable MSMQ from **Computer Management** in the **"Turn On and Off Features"** dialog of your Windows PC.
+* Set Visual Studio 2022 to Start Up Multiple Projects by right clicking on the solution (projects hub).
 
 # Badges
 ![GitHub all releases](https://img.shields.io/github/downloads/Samuel-Jaja/MSMQ_MVVM_Application/total)
@@ -24,6 +26,6 @@ Prism Core 8.1.97
 ![GitHub top language](https://img.shields.io/github/languages/top/Samuel-Jaja/MSMQ_MVVM_Application?color=yellow)
 ![GitHub forks](https://img.shields.io/github/forks/Samuel-Jaja/MSMQ_MVVM_Application?style=social)
 
-![GitHub forks](https://img.shields.io/twitter/follow/senibo_sj?style=social)
+
 
 
