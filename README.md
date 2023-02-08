@@ -13,10 +13,11 @@ Inter App Communication using [Microsoft Message Queuing (MSMQ)](https://learn.m
 
 # How to Run the Project: 
 * Clone Project 
-* Enable MSMQ from **Computer Management** in the **"Turn On and Off Features"** dialog of your Windows PC.
+* Enable MSMQ from **Computer Management** in the **"Turn On and Off Features"** dialog of your Windows PC. OR
+* Control Panel >>> Programs >>> Turn On and Off Features >>> Microsoft Message Queue Server
 * Set Visual Studio 2022 to Start Up Multiple Projects by right clicking on the solution (projects hub).
 
-#Control Panel >>> Programs >>> Turn On and Off Features >>> Microsoft Message Queue Server
+
 
 # Badges
 ![GitHub all releases](https://img.shields.io/github/downloads/Samuel-Jaja/MSMQ_MVVM_Application/total)
