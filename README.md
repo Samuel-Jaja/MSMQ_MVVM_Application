@@ -2,8 +2,7 @@
 # Microsoft Message Queue [MSMQ] Application
 
 # Project Description: 
-Inter App Communication using [Microsoft Message Queuing (MSMQ)](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/msmq/ms711472(v=vs.85)) between two Windows Presentation Foundation [WPF] Applications 
-to demostrate messaging with MSMQ using Model View View-Model pattern, such that when Application 1 (process A) publishes data Application 2 (process B) subscribes automatically to recieve the data from the queue.
+Inter App Communication using [Microsoft Message Queuing (MSMQ)](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/msmq/ms711472(v=vs.85)) between two Windows Presentation Foundation [WPF](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/?view=azurestackps-2.5.0) Applications to demostrate messaging with MSMQ using Model View View-Model pattern, such that when Application 1 (process A) publishes data Application 2 (process B) subscribes automatically to recieve the data from the queue.
 
 # Dependencies:
 **.NET 7**
