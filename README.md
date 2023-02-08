@@ -1,5 +1,3 @@
-![GitHub forks](https://img.shields.io/twitter/follow/senibo_sj?style=social)
-
 # Project Title:
 # Microsoft Messaging Queue [MSMQ] Application
 
@@ -25,6 +23,8 @@ Prism Core 8.1.97
 ![GitHub file size](https://img.shields.io/github/repo-size/Samuel-Jaja/MSMQ_MVVM_Application)
 ![GitHub top language](https://img.shields.io/github/languages/top/Samuel-Jaja/MSMQ_MVVM_Application?color=yellow)
 ![GitHub forks](https://img.shields.io/github/forks/Samuel-Jaja/MSMQ_MVVM_Application?style=social)
+
+![GitHub forks](https://img.shields.io/twitter/follow/senibo_sj?style=social)
 
 
 
