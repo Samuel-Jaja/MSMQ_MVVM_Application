@@ -1,5 +1,5 @@
 # Project Title:
-## Microsoft Messaging Queue [MSMQ] Application
+# Microsoft Messaging Queue [MSMQ] Application
 
 # Project Description: 
 Inter App Communication using MSMQ between two Windows Presentation Foundation [WPF] Applications 
@@ -8,9 +8,9 @@ to demostrate messaging with MSMQ using Model View View-Model pattern, such that
 # Dependencies 
 **.NET 7**
 
-**Packages: **
-MSMQ Messaging 1.0.4, 
-Prism Core 8.1.97
+**Packages:**
+**MSMQ Messaging 1.0.4** 
+**Prism Core 8.1.97**
 
 # How to Run the Project: 
 * Clone Project 
