@@ -12,8 +12,9 @@ Inter App Communication using [Microsoft Message Queuing (MSMQ)](https://learn.m
 **Prism Core 8.1.97**
 
 # How to Run the Project: 
-* Clone Project 
-* Enable MSMQ from **Computer Management** in the **"Turn On and Off Features"** dialog of your Windows PC. OR
+* Clone the Project: https://github.com/Samuel-Jaja/MSMQ_MVVM_Application.git
+* Enable MSMQ from **Computer Management** in the **"Turn On and Off Features"** dialog of your Windows PC. 
+OR
 * Control Panel >>> Programs >>> Turn On and Off Features >>> Microsoft Message Queue Server
 * Set Visual Studio 2022 to Start Up Multiple Projects by right clicking on the solution (projects hub).
 
