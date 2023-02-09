@@ -16,10 +16,16 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" FontSize="30" Text="CypherCrescent Resource"  FontWeight="Bold" HorizontalAlignment="Center"/>
-        <ListView Grid.Row="1" FontSize="16" Height="350" FontWeight="DemiBold" ItemsSource="{Binding RetrievedWellDataModels}">
+        <ListView Grid.Row="1" FontSize="16" Height="350" FontWeight="DemiBold" ItemsSource="{Binding RetrievedWellDataModels}" HorizontalAlignment="Center" HorizontalContentAlignment="Center">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                </Style>
+            </ListView.ItemContainerStyle>
             <ListView.View >
                 <GridView x:Name="grdNames" >
-                    <GridViewColumn  Width="160" Header="Field Name" DisplayMemberBinding="{Binding FieldName }"  />
+                    <GridViewColumn Width="160" Header="Field Name" DisplayMemberBinding="{Binding FieldName}"  />
                     <GridViewColumn Width="170" Header="Well Name" DisplayMemberBinding="{Binding WellName}"/>
                     <GridViewColumn Width="160" Header="Drainage Point" DisplayMemberBinding="{Binding DrainagePoint}"/>
                 </GridView>

@@ -62,7 +62,7 @@ namespace MSMQ_Subsciber_MVVM_Application.ViewModel
                 WellName = wellDatamodel.WellName,
                 DrainagePoint = wellDatamodel.DrainagePoint
             };
-            Application.Current.Dispatcher.Invoke(() =>
+            Application.Current.Dispatcher.BeginInvoke(() =>
             {
                 retrievedWellDataModels.Add(retrievedWellDataModel);
             });
@@ -75,8 +75,8 @@ namespace MSMQ_Subsciber_MVVM_Application.ViewModel
         private ObservableCollection<RetrievedWellDataModel> retrievedWellDataModels;
         public ObservableCollection<RetrievedWellDataModel> RetrievedWellDataModels
         {
-            get { return retrievedWellDataModels; }
-            set { retrievedWellDataModels = value; }
+            get { return retrievedWellDataModels;}
+            set { retrievedWellDataModels = value;}
         }
     }
 }
