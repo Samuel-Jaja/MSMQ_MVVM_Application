@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
@@ -10,10 +10,6 @@
   <ItemGroup>
     <PackageReference Include="MSMQ.Messaging" Version="1.0.4" />
     <PackageReference Include="Prism.Core" Version="8.1.97" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MSMQ_MVVM_Application\MSMQ_MVVM_Application.csproj" />
   </ItemGroup>
 
 </Project>

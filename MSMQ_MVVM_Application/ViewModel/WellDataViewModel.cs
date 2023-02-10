@@ -39,7 +39,7 @@ namespace MSMQ_MVVM_Application.ViewModel
             string queuePath = @".\private$\MSMQ_MessagingApp";
             if (!MessageQueue.Exists(queuePath))
             {
-              _ = MessageQueue.Create(queuePath);
+              MessageQueue.Create(queuePath);
             }
         }
         /// <summary>
@@ -48,18 +48,22 @@ namespace MSMQ_MVVM_Application.ViewModel
         public void SendDataToQueue()
         {
             MessageQueue queue = new(@".\private$\MSMQ_MessagingApp");
-            WellDatamodel wellData = new()
+            WellDatamodel wellData = MapWellDataProperties();
+            queue.Send(wellData, "CypherCrescentResource");
+            FieldName = string.Empty;
+            WellName = string.Empty;
+            DrainagePoint = string.Empty;
+        }
+        private WellDatamodel MapWellDataProperties()
+        {
+            return new()
             {
                 WellName = WellName,
                 FieldName = FieldName,
                 DrainagePoint = DrainagePoint
             };
-            Message msg = new(wellData);
-            queue.Send(msg, "CypherCrescentResource");
-            FieldName = string.Empty;
-            WellName = string.Empty;
-            DrainagePoint = string.Empty;
         }
+
         /// <summary>
         /// Backing fields and corresponding well data properties 
         /// </summary>

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MSMQ_Subsciber_MVVM_Application.Model
 {
-    public class RetrievedWellDataModel
+    public class WellDatamodel
     {
-        public string? FieldName { get; set; }
-        public string? WellName { get; set; }
-        public string? DrainagePoint { get; set; }
+        public string? FieldName { get; set; } 
+        public string? WellName { get; set; } 
+        public string? DrainagePoint { get; set; } 
     }
 }

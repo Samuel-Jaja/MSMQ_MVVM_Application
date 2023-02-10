@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MSMQ_Subsciber_MVVM_Application.View"
         mc:Ignorable="d"
-        Title="RetrievedWellDataView" Height="530" Width="500">
+        Title="RetrievedWellDataView" Height="530" Width="600">
 
     <Grid Background="CadetBlue">
         <Grid.RowDefinitions>
@@ -25,9 +25,9 @@
             </ListView.ItemContainerStyle>
             <ListView.View >
                 <GridView x:Name="grdNames" >
-                    <GridViewColumn Width="160" Header="Field Name" DisplayMemberBinding="{Binding FieldName}"  />
+                    <GridViewColumn Width="162" Header="Field Name" DisplayMemberBinding="{Binding FieldName}"  />
                     <GridViewColumn Width="170" Header="Well Name" DisplayMemberBinding="{Binding WellName}"/>
-                    <GridViewColumn Width="160" Header="Drainage Point" DisplayMemberBinding="{Binding DrainagePoint}"/>
+                    <GridViewColumn Width="162" Header="Drainage Point" DisplayMemberBinding="{Binding DrainagePoint}"/>
                 </GridView>
             </ListView.View>
         </ListView>

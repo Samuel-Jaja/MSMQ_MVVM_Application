@@ -1,5 +1,4 @@
 ﻿using MSMQ.Messaging;
-using MSMQ_MVVM_Application.Model;
 using MSMQ_Subsciber_MVVM_Application.Model;
 using Prism.Mvvm;
 using System;
@@ -16,7 +15,7 @@ namespace MSMQ_Subsciber_MVVM_Application.ViewModel
     {
         public RetrievedWellDataViewModel()
         {
-            retrievedWellDataModels = new ObservableCollection<RetrievedWellDataModel>();
+            RetrievedWellDataModels = new ObservableCollection<WellDatamodel>();
             RetrieveWellCommandAction();
         }
         /// <summary>
@@ -56,15 +55,9 @@ namespace MSMQ_Subsciber_MVVM_Application.ViewModel
             queue.Formatter = new XmlMessageFormatter(new Type[] { typeof(WellDatamodel) });
             Message message = queue.EndReceive(e.AsyncResult);
             WellDatamodel wellDatamodel = (WellDatamodel)message.Body;
-            RetrievedWellDataModel retrievedWellDataModel = new RetrievedWellDataModel
-            {
-                FieldName = wellDatamodel.FieldName,
-                WellName = wellDatamodel.WellName,
-                DrainagePoint = wellDatamodel.DrainagePoint
-            };
             Application.Current.Dispatcher.BeginInvoke(() =>
             {
-                retrievedWellDataModels.Add(retrievedWellDataModel);
+                RetrievedWellDataModels.Add(wellDatamodel);
             });
             queue.BeginReceive();
         }
@@ -72,8 +65,8 @@ namespace MSMQ_Subsciber_MVVM_Application.ViewModel
         /// The retrievedWellDataModels is an observable collection
         /// (dynamic collection) that keeps the undelying model in sync  with the UI.
         /// </summary>
-        private ObservableCollection<RetrievedWellDataModel> retrievedWellDataModels;
-        public ObservableCollection<RetrievedWellDataModel> RetrievedWellDataModels
+        private ObservableCollection<WellDatamodel> retrievedWellDataModels;
+        public ObservableCollection<WellDatamodel> RetrievedWellDataModels
         {
             get { return retrievedWellDataModels;}
             set { retrievedWellDataModels = value;}
